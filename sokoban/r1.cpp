@@ -10,11 +10,11 @@ int main(int _ac, char** _av) {
   srand(2);
   load(_av[1]);
   print_board();
-  //printf("%d\n", can_move_U(man_l, man_c));
-  move_U();
-  move_D();
-  move_L();
-  move_R();
+  //printf("%d\n", can_move_U(board.man_l, board.man_c));
+  board.move_U();
+  board.move_D();
+  board.move_L();
+  board.move_R();
   print_board();
   return 0;
 }
